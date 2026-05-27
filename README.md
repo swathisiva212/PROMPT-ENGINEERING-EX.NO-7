@@ -1,35 +1,152 @@
 # Exno.7-Develop a prompt-based application tailored to their personal needs, fostering creativity and practical problem-solving skills while leveraging the capabilities of large language models.
 
-# Date:
-# Register no.
 # Aim: To develop a prompt-based application using ChatGPT - To demonstrate how to create a prompt-based application to organize daily tasks, showing the progression from simple to more advanced prompt designs and their corresponding outputs.
 
 #AI Tools Required: 
-
+ChatGPT
+Python (Optional for implementation)
+VS Code / Google Colab / Command Prompt Interface
 
 # Explanation: 
-Prompt:
-"Design a personal productivity assistant that can help manage daily tasks, schedule reminders, suggest wellness tips, and answer general queries. The assistant should interact using natural language and be adaptable to the user’s changing preferences over time."
-Procedure:
-1. Define the core requirements of a personal productivity assistant.
-2. Identify and construct appropriate prompts for each task using an LLM (e.g., ChatGPT).
-3. Simulate natural user interaction through a simple interface or command-line system.
-4. Collect feedback or inputs from users and adapt responses accordingly.
-5. (Optional) Integrate basic memory to simulate preference adaptation.
-EXPECTED OUTPUT: - (attached the drive link)
-Output (Example Response by LLM):
-Personal Productivity Assistant Features:
-1. Daily Task Manager:
-o Accept tasks via natural language (e.g., "Remind me to call mom at 6 PM").
-o Organize tasks by priority and deadline.
-o Provide daily summaries and pending items.
-2. Smart Scheduler:
-o Schedule events and set reminders using contextual understanding.
-o Notify user of overlapping appointments or free time slots.
-3. Wellness Tips Generator:
-o Suggest daily wellness advice (hydration, exercise, screen-time breaks).
-o Adapt suggestions based on past user preferences and responses.
+The objective of this experiment is to design a Personal Productivity Assistant powered by an LLM such as OpenAI ChatGPT.
+The assistant interacts with users using natural language prompts and performs productivity-related tasks like task management, scheduling, reminders, wellness recommendations, and answering general queries.
 
+The application demonstrates how prompt engineering can progressively improve the assistant’s intelligence and usability.
+
+# Problem Statement
+Design a personal productivity assistant that can:
+Manage daily tasks
+Schedule reminders
+Suggest wellness tips
+Answer general user queries
+Adapt to changing user preferences over time
+The assistant should communicate naturally and provide user-friendly responses.
+
+# Procedure
+Step 1: Define Core Requirements
+The assistant should include:
+Task management
+Reminder scheduling
+Wellness guidance
+General question answering
+Basic memory/preference adaptation
+
+Step 2: Construct Prompt Designs
+Prompt 1 – Basic Task Reminder
+Prompt:
+Remind me to complete my AI assignment at 7 PM.
+Output:
+Sure! I will remind you to complete your AI assignment at 7 PM today.
+
+Prompt 2 – Daily Task Organization
+Prompt:
+Organize my tasks for today:
+1. Finish lab record
+2. Attend online class at 2 PM
+3. Buy groceries
+4. Go for exercise
+Output:
+Today's Schedule:
+High Priority:
+• Finish lab record
+• Attend online class at 2 PM
+Medium Priority:
+• Buy groceries
+Personal Wellness:
+• Go for exercise
+
+Prompt 3 – Smart Scheduling
+Prompt:
+Schedule a meeting at 4 PM and check whether I have any conflicts.
+Output:
+You already have a study session scheduled from 3:30 PM to 4:30 PM.
+Suggested Options:
+• Move meeting to 5 PM
+• Reschedule study session
+
+Prompt 4 – Wellness Suggestion
+Prompt:
+Suggest wellness tips for someone working on a computer for long hours.
+Output:
+Wellness Tips:
+• Drink water every hour
+• Take a 5-minute eye break every 30 minutes
+• Stretch your neck and shoulders regularly
+• Avoid excessive screen brightness
+
+Prompt 5 – Adaptive Assistant Prompt
+Prompt:
+I prefer studying at night and exercising in the morning. Organize my routine accordingly.
+Output:
+Personalized Daily Routine:
+Morning:
+• Exercise from 6 AM – 7 AM
+Afternoon:
+• Attend classes and complete light tasks
+Night:
+• Dedicated study session from 8 PM – 11 PM
+
+# Sample Python Implementation
+```
+print("=== Personal Productivity Assistant ===")
+
+while True:
+    user = input("You: ")
+
+    if "task" in user.lower():
+        print("Assistant: Your task has been added successfully.")
+
+    elif "remind" in user.lower():
+        print("Assistant: Reminder scheduled.")
+
+    elif "wellness" in user.lower():
+        print("Assistant: Drink enough water and take regular breaks.")
+
+    elif "exit" in user.lower():
+        print("Assistant: Goodbye!")
+        break
+
+    else:
+        print("Assistant: I can help manage tasks and reminders.")
+
+```
+# Features of the Productivity Assistant
+## 1. Daily Task Manager
+Accepts tasks in natural language
+Organizes tasks by priority
+Displays pending activities
+## 2. Smart Scheduler
+Schedules reminders and meetings
+Detects time conflicts
+Suggests better schedules
+## 3. Wellness Recommendation System
+Provides health and productivity tips
+Suggests breaks and exercise routines
+Encourages healthy digital habits
+## 4. Adaptive Response System
+Learns user preferences
+Adjusts schedules dynamically
+Provides personalized suggestions
+# Advantages
+Easy natural language interaction
+Improves personal productivity
+Reduces manual scheduling effort
+Personalized user experience
+Flexible and scalable system
+# Applications
+Student daily planning
+Office productivity management
+Personal wellness tracking
+Smart virtual assistant systems
+Time management applications
+
+# Expected Output
+The system successfully accepts user prompts and generates meaningful productivity assistance such as:
+Task reminders
+Schedule management
+Wellness recommendations
+Personalized routine suggestions
+The assistant interacts naturally and adapts based on user preferences.
 
 
 # Result: 
